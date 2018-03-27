@@ -1,0 +1,38 @@
+{
+  "name": "react-overlay-page",
+  "version": "0.0.1",
+  "description": "react component, overlayed page can be appear and disappear",
+  "main": "dist/index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "build": "NODE_ENV=production babel lib --out-dir dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://ignocide@github.com/ignocide/react-overlay-page.git"
+  },
+  "keywords": [
+    "react",
+    "overlay",
+    "page"
+  ],
+  "author": "ignocide",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ignocide/react-overlay-page/issues"
+  },
+  "homepage": "https://github.com/ignocide/react-overlay-page#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-react-app": "^3.1.1",
+    "prop-types": "^15.6.1",
+    "react": "^16.2.0"
+  },
+  "babel": {
+    "presets": [
+      "react-app"
+    ]
+  }
+}
