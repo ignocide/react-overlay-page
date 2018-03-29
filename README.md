@@ -38,6 +38,7 @@ let options = {
 | direction     | String | One of ("bottom", "top", "right", "left")     | "bottom" | no       |
 | zIndex        | number | overlaypages zIndex                           | 100      | no       |
 | duration      | String | example "0.3s"                                | "0.3s"   | no       |
+| style         | Object | overlaypage's style                           | {}       | no       |
 
 ## License
 
