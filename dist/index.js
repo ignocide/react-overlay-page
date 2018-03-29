@@ -128,7 +128,7 @@ OverlayPage.propTypes = {
   isOpen: PropTypes.bool.isRequired,
   mountOnRender: PropTypes.bool,
   duration: PropTypes.string,
-  zIndex: PropsTypes.number,
+  zIndex: PropTypes.number,
   direction: PropTypes.oneOf(['bottom', 'top', 'right', 'left']),
   style: PropTypes.object
 };
