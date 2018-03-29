@@ -74,6 +74,9 @@ var OverlayPage = function (_React$Component) {
           direction = _props.direction,
           props = _objectWithoutProperties(_props, ['isOpen', 'children', 'mountOnRender', 'style', 'duration', 'zIndex', 'direction']);
 
+      var show = this.state.show;
+
+
       var pageStyle = this.getStyle();
 
       return React.createElement(
@@ -99,8 +102,7 @@ var _initialiseProps = function _initialiseProps() {
         mountOnRender = _props2.mountOnRender,
         defaultStyle = _props2.defaultStyle,
         duration = _props2.duration,
-        _props2$style = _props2.style,
-        style = _props2$style === undefined ? {} : _props2$style,
+        style = _props2.style,
         zIndex = _props2.zIndex,
         direction = _props2.direction,
         props = _objectWithoutProperties(_props2, ['isOpen', 'children', 'mountOnRender', 'defaultStyle', 'duration', 'style', 'zIndex', 'direction']);
@@ -124,14 +126,19 @@ var _initialiseProps = function _initialiseProps() {
 
 OverlayPage.propTypes = {
   isOpen: PropTypes.bool.isRequired,
-  mountOnRender: PropTypes.bool
+  mountOnRender: PropTypes.bool,
+  duration: PropTypes.string,
+  zIndex: PropsTypes.number,
+  direction: PropTypes.oneOf(['bottom', 'top', 'right', 'left']),
+  style: PropTypes.object
 };
 
 OverlayPage.defaultProps = {
   mountOnRender: true,
   duration: '0.3s',
   zIndex: 100,
-  direction: 'bottom'
+  direction: 'bottom',
+  style: {}
 };
 
 export default OverlayPage;
